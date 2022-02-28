@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <div class="form-div">
+                <form id="labtest" action="">
+                    <article>
+                        <h2> 1. Your Contact Details</h2>
+                        <input type="text" name="fullname" placeholder="Full Name">
+                        <input type="number" name="patientId" placeholder="Patient Id if exists">
+                        <input type="number" min="6000000000" max="9999999999" name="contact"
+                            placeholder="Contact Number">
+                        <input type="email" name="fullname" placeholder="Email Id">
+                    </article>
+                    <article>
+                        <h2> 2. Address</h2>
+                        <input type="text" name="houseno" placeholder="H-No">
+                        <input type="text" name="street" placeholder="Street">
+                        <input type="text" name="area" placeholder="Area">
+                    </article>
+
+                    <div class="form-select">
+                        <label for="district">District</label>
+                        <select id="district">
+                            <option>Choose</option>
+                            <option>Bengaluru Urban</option>
+                            <option>New Delhi</option>
+                        </select>
+                    </div>
+                    <div class="checkbox">
+                        <h3>Choose Test Type</h3>
+                        <p class="message">*Check atleast one box without fail</p>
+                        <section>
+                            <label for="checkbox1">CBC</label>
+                            <input type="checkbox" id="checkbox1" name="" value="cbc" checked>
+                        </section>
+
+                        <section>
+                            <label for="checkbox2">Complete Urine</label>
+                            <input type="checkbox" id="checkbox2" name="" value="urine">
+                        </section>
+                        <section>
+                            <label for="checkbox3">Lipid Profile</label>
+                            <input type="checkbox" id="checkbox3" name="" value="lipid">
+                        </section>
+
+                        <section>
+                            <label for="checkbox4">Thyroid Stimulating Hormone(TSH)</label>
+                            <input type="checkbox" id="checkbox4" name="" value="TSH">
+                        </section>
+                        <section>
+                            <label for="checkbox5">Glucose Test</label>
+                            <input type="checkbox" id="checkbox5" name="" value="Glucose">
+                        </section>
+                    </div>
+                    <h3>Do you want a hard copy of the report also?</h3>
+
+                    <div class="radio-div">
+                        <input type="radio" id="yes" name="report" value="Yes" checked>
+                        <label for="yes">Yes</label>
+                    </div>
+
+                    <div class="radio-div">
+                        <input type="radio" id="no" name="report" value="No">
+                        <label for="no">No</label>
+
+                    </div>
+
+
+                    <h3>Select Your Comfortable Date and Time</h3>
+                    <div></div>
+                    <section class="date-div">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" min="09:00" max="18:00" required>
+
+                    </section>
+
+                </form>
+            </div>
+            <div class="image-div">
+                <img class="img-style" src="Images/Lab-Test/lab-test.jpg">
+            </div>
+        </div>
+        <div class="form-control">
+            <input type="submit" value="Submit" form="labtest">
+            <input type="reset" value="Reset" form="labtest">
+        </div>
+    </div>
+
+</body>
+
+</html>
